@@ -1,0 +1,11 @@
+.root {
+    -fx-background-color: #e8f6ff; /* Replace with your desired color code */
+}
+
+#button {
+    -fx-background-radius: 25px;
+    -fx-background-color: #71ccf0;
+
+    -fx-border-color: rgb(0, 0, 0);
+    -fx-border-radius: 25px;
+}

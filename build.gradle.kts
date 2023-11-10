@@ -5,10 +5,10 @@ plugins {
 
 javafx {
     version = "17"
-    modules("javafx.controls", "javafx.fxml")
+    modules("javafx.controls", "javafx.fxml", "javafx.graphics", "javafx.base")
 }
 
-group = "org.example"
+group = "ocl28"
 version = "1.0-SNAPSHOT"
 
 repositories {
@@ -16,6 +16,11 @@ repositories {
 }
 
 dependencies {
+
+    implementation("org.openjfx:javafx-controls:17")
+    implementation("org.openjfx:javafx-fxml:17")
+    implementation("org.openjfx:javafx-graphics:17")
+    implementation("org.openjfx:javafx-base:17")
 
     // JUnit dependencies
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
@@ -25,3 +30,4 @@ dependencies {
 tasks.test {
     useJUnitPlatform()
 }
+
